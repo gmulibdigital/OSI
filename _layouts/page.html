@@ -1,0 +1,29 @@
+---
+layout: default
+---
+<article>
+
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title }}</h1>
+    <p class="authors">{{page.authors}}</p>
+    <p><strong>DOI:</strong> <a href="{{page.doi}}">{{page.doi}}</a></p>
+    {% if page.abstract %}
+	     <h2>Abstract</h2>
+	     <p>{{page.abstract}}</p>
+	  {% endif %}
+
+    {% if page.question %}
+      <h2>OSI2016 Workshop Question</h2>
+    	<p>{{page.question}}</p>
+    {% endif %}
+
+    <div id="docCopyright">
+		<p>© 2016 OSI2016 {{page.title}} workgroup. This open access article is distributed under the <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>. This document reflects the combined input of the authors listed here (in alphabetical order by last name) as well as contributions from other OSI2016 delegates. The findings and recommendations expressed herein do not necessarily reflect the opinions of the individual authors listed here, nor their agencies, trustees, officers, or staff.</p>
+	</div>
+  </header>
+
+  <div class="post-content">
+    {{ content }}
+  </div>
+
+</article>

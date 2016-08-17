@@ -1,0 +1,71 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
+  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+  <style>
+  		p {
+		    margin: .75em 0;
+		    line-height: 1.4em;
+		}
+		ul, ol {
+			margin-left: 10px;
+		}
+		ol.list-roman {
+			list-style-type: lower-roman;
+		}
+		ol.list-alpha {
+			list-style-type: lower-alpha;
+		}
+		li {
+			line-height: 1.4em;
+		}
+		li p {
+			margin: 0;
+		}
+		header, article header {
+		    border-bottom: 4px solid black;
+		}
+		table {
+			border: 1px solid grey;
+		}
+		thead {
+			padding: .5em 0;
+		}
+		thead th {
+			background: #A1B5BE;
+		}
+		td, th {
+			padding: .5em;
+		}
+		tbody {
+			border: 1px solid black;
+		}
+		tbody tr:nth-child(even) {
+			background: #CBCBCB;
+		}
+		table ul, table ol {
+			margin-left: 0;
+			padding-left:17px;
+		}
+		.post-header h1 {
+			margin-top: .5em;
+		}
+		#docHeader img {
+		    display: inline-block;
+		    max-width: 10%;
+		}
+		.authors {
+		    font-style: italic;
+		}
+		#journalInfo {
+		    display: inline-block;
+		}
+		#docCopyright {
+		    font-size: .85em;
+		    margin: 1em 0;
+		}
+  </style>
+</head>
